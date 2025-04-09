@@ -4,7 +4,7 @@
 
 This project allows you to upload PDFs, extract text, convert it into embeddings using Ollama's Embedding Model, and store them in a Milvus vector database. You can then perform semantic searches and AI Chat on the stored text.
 
-🔗 [Full System Design Notion Write-up](https://desert-burst-2c1.notion.site/NexaChat-Lightweight-LLM-Chatbot-1d03ae4e7994808b8482e52ed88b375b?pvs=4)
+🔗 [Full System Design Notion Write-up](https://bit.ly/4jv4VoZ)
 
 ## 🏗️ Project Structure
 
