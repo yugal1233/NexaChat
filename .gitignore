@@ -1,0 +1,4 @@
+models/*
+uploads/*
+src/app.py
+src/app_v2.py
