@@ -1,4 +1,4 @@
-# PDF to Milvus Vector Store with Semantic Search
+# NexaChat – Lightweight LLM Chatbot
 
 ## 📌 Overview
 
