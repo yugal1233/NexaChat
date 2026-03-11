@@ -22,5 +22,5 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           review_focus: 'security,bugs,codeQuality,performance'
-          block_on: 'critical'
+          block_on: 'critical,high'
           human_reviewers: 'yugal1233'
