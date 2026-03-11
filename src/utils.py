@@ -21,3 +21,11 @@ def truncate_text(text: str, max_length: int = 500) -> str:
     if len(text) <= max_length:
         return text
     return text[:max_length - 3] + "..."
+
+
+def sanitize_filename(filename: str) -> str:
+    """Removes unsafe characters from a filename."""
+    safe_chars = "-_.() "
+    return "".join(c for c in filename if c.isalnum() or c in safe_chars).strip()
+
+
