@@ -1,0 +1,25 @@
+name: Deltek CodeSentinel
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  review:
+    name: CodeSentinel Review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run CodeSentinel
+        uses: yugal1233/deltek-codesentinel@main
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          review_focus: 'security,bugs,codeQuality,performance'
+          block_on: 'critical'
