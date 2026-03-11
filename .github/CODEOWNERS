@@ -1,0 +1,12 @@
+# Deltek CodeSentinel - CODEOWNERS
+# These users are automatically requested for review on every PR.
+# See: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default: all files require review from the repo owner
+*       @yugal1233
+
+# Example: assign specific reviewers per path
+# src/auth/       @security-lead
+# src/api/        @backend-lead
+# .github/        @devops-team
+# docs/           @tech-writer
