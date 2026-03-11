@@ -27,9 +27,3 @@ def sanitize_filename(filename: str) -> str:
     """Removes unsafe characters from a filename."""
     safe_chars = "-_.() "
     return "".join(c for c in filename if c.isalnum() or c in safe_chars).strip()
-
-
-def execute_query(db_connection, user_input: str):
-    """Runs a database query based on user input."""
-    query = f"SELECT * FROM users WHERE name = '{user_input}'"
-    return db_connection.execute(query)
