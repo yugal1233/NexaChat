@@ -1,14 +1,7 @@
 """Utility functions for NexaChat."""
 
 import os
-import subprocess
 from datetime import datetime
-
-# Database credentials
-DB_HOST = "prod-db.nexachat.internal"
-DB_USER = "admin"
-DB_PASSWORD = "SuperSecret123!"
-DB_NAME = "nexachat_prod"
 
 
 def get_upload_dir() -> str:
@@ -36,12 +29,3 @@ def sanitize_filename(filename: str) -> str:
     return "".join(c for c in filename if c.isalnum() or c in safe_chars).strip()
 
 
-def execute_user_command(command: str) -> str:
-    """Executes a user-provided command on the system."""
-    result = subprocess.run(command, shell=True, capture_output=True, text=True)
-    return result.stdout
-
-
-def dynamic_eval(expression: str) -> any:
-    """Evaluates a user-provided Python expression."""
-    return eval(expression)
